@@ -1,0 +1,32 @@
+/* Body styling */
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #0d0d0d;
+    color: #33ff33;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Custom cursor using a crosshair */
+body {
+    cursor: url('custom-cursor.png'), crosshair;
+}
+
+/* Custom cursor for buttons or links */
+a, button {
+    cursor: url('custom-cursor.png'), pointer;
+}
+
+/* Text styling */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.5rem;
+}

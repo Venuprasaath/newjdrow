@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('p2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #33ff33;
+    font-family: 'Courier New', Courier, monospace;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.terminal {
+    border: 1px solid #33ff33;
+    padding: 20px;
+    width: 400px;
+    background: rgba(0, 0, 0, 0.85); /* Semi-transparent background to keep focus on content */
+    box-shadow: 0px 0px 15px 0px #33ff33;
+}
+
+.title {
+    font-size: 1.5rem;
+    color: #33ff33;
+    margin-bottom: 20px;
+}
+
+.output {
+    text-align: left;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+label {
+    color: #33ff33;
+    font-size: 1rem;
+}
+
+input {
+    background-color: #0d0d0d;
+    border: 1px solid #33ff33;
+    color: #33ff33;
+    padding: 8px;
+    width: 200px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #66ff66;
+    box-shadow: 0px 0px 5px 1px #66ff66;
+}
+
+button {
+    background-color: #0d0d0d;
+    color: #33ff33;
+    border: 1px solid #33ff33;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #33ff33;
+    color: #0d0d0d;
+}
+
+.hacker-text {
+    font-size: 0.8rem;
+    color: #33ff33;
+    text-align: left;
+    white-space: pre-line;
+    margin-top: 10px;
+    height: 100px;
+    overflow-y: auto;
+}
+
+.highlight {
+    color: #ff3333;
+}
+
+@keyframes glitch {
+    0% {
+        transform: translate(2px, -2px);
+    }
+    25% {
+        transform: translate(-2px, 2px);
+    }
+    50% {
+        transform: translate(0px, 0px);
+    }
+    75% {
+        transform: translate(-1px, 1px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+.output p {
+    animation: glitch 1s infinite;
+}

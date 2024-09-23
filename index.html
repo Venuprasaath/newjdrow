@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hacker UI Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="dashbord.html">
+    <link rel="stylesheet" href="cursor.html">
+</head>
+<center>
+<body>
+    <div class="container">
+        <div class="terminal">
+            <h1 class="title">System Access</h1>
+            <div class="output">
+                <p>Enter <span class="highlight">User ID</span> and <span class="highlight">Password</span> to proceed:</p>
+            </div>
+            <form id="login-form">
+                <div class="input-group">
+                    <label for="userId">User ID:</label>
+                    <input type="text" id="userId" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" required>
+                </div>
+                <div class="input-group">
+                    <button type="submit" id="submit-btn">Login</button>
+                </div>
+            </form>
+            <div class="hacker-text" id="hacker-text"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</center>
+</html>
